@@ -11,7 +11,7 @@ def adventurer_list(request):
     if request.method == 'GET':
         data = Adventurer.objects.all()
 
-        serializer = AdventurerSerializer(data, context={'request': request}, many=true)
+        serializer = AdventurerSerializer(data, context={'request': request}, many=True)
 
         return Response(serializer.data)
     
