@@ -7,7 +7,7 @@ from .models import Adventurer
 from .serializers import *
 
 @api_view(['GET', 'POST'])
-def adventurers_list(request):
+def adventurer_list(request):
     if request.method == 'GET':
         data = Adventurer.objects.all()
 
