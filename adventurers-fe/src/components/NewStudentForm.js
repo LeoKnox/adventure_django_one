@@ -96,7 +96,27 @@ class NewAdventurerForm extends React.Component {
                         value={this.defaultIfEmpty(this.state.ac)}
                     />
                 </FormGroup>
+                <FormGroup>
+                    <Label for="hp">Hit Points:</Label>
+                    <Input
+                        type="number"
+                        name="hp"
+                        onChange={this.onChange}
+                        value={this.defaultIfEmpty(this.state.ac)}
+                    />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="mgc">Magic:</Label>
+                    <Input
+                        type="number"
+                        name="mgc"
+                        onChange={this.onChange}
+                        value={this.defaultIfEmpty(this.state.mgc)}
+                    />
+                </FormGroup>
             </Form>
-        )
+        );
     }
 }
+
+export default NewAdventurerForm;
