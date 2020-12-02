@@ -64,9 +64,36 @@ class NewAdventurerForm extends React.Component {
                     <Label for="char_class">Character Class:</Label>
                     <Input
                         type="text"
-                        name="text"
+                        name="char_class"
                         onChange={this.onChange}
-                        value={this.defaultIfEmpty(this.state.email)}
+                        value={this.defaultIfEmpty(this.state.char_class)}
+                    />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="char_race">Character Race:</Label>
+                    <Input
+                        type="text"
+                        name="char_race"
+                        onChange={this.onChange}
+                        value={this.defaultIfEmpty(this.state.char_race)}
+                    />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="atk">Attack:</Label>
+                    <Input
+                        type="number"
+                        name="atk"
+                        onChange={this.onChange}
+                        value={this.defaultIfEmpty(this.state.atk)}
+                    />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="ac">Armor Class:</Label>
+                    <Input
+                        type="number"
+                        name="ac"
+                        onChange={this.onChange}
+                        value={this.defaultIfEmpty(this.state.ac)}
                     />
                 </FormGroup>
             </Form>
