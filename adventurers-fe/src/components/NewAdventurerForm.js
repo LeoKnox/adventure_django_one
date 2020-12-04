@@ -102,7 +102,7 @@ class NewAdventurerForm extends Component {
                         type="number"
                         name="hp"
                         onChange={this.onChange}
-                        value={this.defaultIfEmpty(this.state.ac)}
+                        value={this.defaultIfEmpty(this.state.hp)}
                     />
                 </FormGroup>
                 <FormGroup>
