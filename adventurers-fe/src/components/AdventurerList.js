@@ -4,7 +4,7 @@ import NewAdventurerModal from "./NewAdventurerModal";
 
 import ConfirmRemovalModal from "./ConfirmRemovalModal";
 
-class AdventurerList extends Component {
+class AdventurerList extends React.Component {
     render() {
         const adventurers = this.props.adventurers;
         return (

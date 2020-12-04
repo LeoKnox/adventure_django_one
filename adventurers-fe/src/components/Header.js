@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Header extends Component {
-    reader() {
+    render() {
         return (
             <div className="text-center">
                 <h1>Adventurers are fodder</h1>
