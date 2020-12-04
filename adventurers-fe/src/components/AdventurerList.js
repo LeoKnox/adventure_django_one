@@ -45,7 +45,7 @@ class AdventurerList extends Component {
                                     resetState={this.props.resetState}
                                 />
                                 &nbsp;&nbsp;
-                                <ConfirmRemobvalModal
+                                <ConfirmRemovalModal
                                     pk={adventurer.pk}
                                     resetState={this.props.resetState}
                                 />

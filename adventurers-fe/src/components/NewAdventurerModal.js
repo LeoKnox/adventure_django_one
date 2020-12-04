@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
-import NewAdventurerForm from "./NewStudentForm";
+import NewAdventurerForm from "./NewAdventurerForm";
 
 class NewAdventurerModal extends Component {
     state = {
@@ -37,7 +37,7 @@ class NewAdventurerModal extends Component {
         return (
             <Fragment>
                 {button}
-                <Model isOpen={this.state.modal} toggle={this.toggle}>
+                <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>{title}</ModalHeader>
 
                     <ModalBody>
@@ -47,7 +47,7 @@ class NewAdventurerModal extends Component {
                             student={this.props.adventurer}
                         />
                     </ModalBody>
-                </Model>
+                </Modal>
             </Fragment>
         );
     }
